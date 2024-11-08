@@ -10,4 +10,9 @@
         android:name="com.example.govjobkg.ui.auth.AuthFragment"
         tools:layout="@layout/fragment_auth"
         android:label="AuthFragment" />
+    <fragment
+        android:id="@+id/userMainFragment"
+        android:name="com.example.govjobkg.ui.user.main.UserMainFragment"
+        android:label="fragment_user_main"
+        tools:layout="@layout/fragment_user_main" />
 </navigation>
