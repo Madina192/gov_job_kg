@@ -27,5 +27,15 @@
         android:id="@+id/applicationsFragment"
         android:name="com.example.govjobkg.ui.hr.ApplicationsFragment"
         android:label="ApplicationsFragment" />
+    <fragment
+        android:id="@+id/userMainFragment"
+        android:name="com.example.govjobkg.ui.user.main.UserMainFragment"
+        android:label="fragment_user_main"
+        tools:layout="@layout/fragment_user_main" />
+    <fragment
+        android:id="@+id/vacanciesFragment"
+        android:name="com.example.govjobkg.ui.user.vacancies.VacanciesFragment"
+        android:label="fragment_vacancies"
+        tools:layout="@layout/fragment_vacancies" />
 
 </navigation>
