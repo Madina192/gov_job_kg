@@ -4,7 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.example.govjobkg.base.BaseViewModel
 import com.example.govjobkg.network.MainRepository
-import com.google.movietv.model.MovieResponse
+import com.example.govjobkg.network.models.MovieResponse
 
 class AuthViewModel: BaseViewModel() {
 

@@ -1,4 +1,4 @@
-package com.google.movietv.model
+package com.example.govjobkg.network.models
 
 import com.google.gson.annotations.SerializedName
 
