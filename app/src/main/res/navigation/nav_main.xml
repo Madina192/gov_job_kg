@@ -9,5 +9,22 @@
         android:id="@+id/authFragment"
         android:name="com.example.govjobkg.ui.auth.AuthFragment"
         tools:layout="@layout/fragment_auth"
-        android:label="AuthFragment" />
+        android:label="AuthFragment" >
+
+        <action
+            android:id="@+id/action_authFragment_to_createNewVacancyFragment"
+            app:destination="@id/createNewVacancyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createNewVacancyFragment"
+        android:name="com.example.govjobkg.ui.hr.CreateNewVacancyFragment"
+        android:label="CreateNewVacancyFragment" >
+        <action
+            android:id="@+id/action_createNewVacancyFragment_to_applicationsFragment"
+            app:destination="@id/applicationsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/applicationsFragment"
+        android:name="com.example.govjobkg.ui.hr.ApplicationsFragment"
+        android:label="ApplicationsFragment" />
 </navigation>
