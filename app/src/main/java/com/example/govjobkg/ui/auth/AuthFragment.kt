@@ -9,7 +9,6 @@ class AuthFragment : BaseFragment<AuthViewModel, FragmentAuthBinding>(FragmentAu
 
     override val viewModel: AuthViewModel by viewModels()
 
-
     override fun initialize() {
         super.initialize()
         viewModel.getMovies()
