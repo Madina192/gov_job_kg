@@ -1,5 +1,6 @@
 package com.example.govjobkg.ui.hr
 
+import androidx.core.view.isVisible
 import androidx.fragment.app.viewModels
 import com.example.govjobkg.base.BaseFragment
 import com.example.govjobkg.databinding.FragmentApplicationsBinding
@@ -11,6 +12,7 @@ class ApplicationsFragment : BaseFragment<MainHrViewModel, FragmentApplicationsB
 
     override fun initialize() {
         super.initialize()
+        initToolbar()
     }
 
     override fun initClicks() {
@@ -21,8 +23,12 @@ class ApplicationsFragment : BaseFragment<MainHrViewModel, FragmentApplicationsB
         super.observeViewModel()
     }
 
-    override fun onLoading(loading: Boolean) {
-        super.onLoading(loading)
+
+    private fun initToolbar(){
+        binding.toolbar.apply {
+            ivBack.isVisible = false
+            title.text = "Отклики"
+        }
     }
 
 }

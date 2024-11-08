@@ -2,7 +2,9 @@ package com.example.govjobkg.ui.auth
 
 import androidx.core.view.isVisible
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
+import com.example.govjobkg.R
 import com.example.govjobkg.base.BaseFragment
 import com.example.govjobkg.databinding.FragmentAuthBinding
 
@@ -13,12 +15,15 @@ class AuthFragment : BaseFragment<AuthViewModel, FragmentAuthBinding>(FragmentAu
 
     override fun initialize() = with(binding) {
         super.initialize()
+        //TODO check user role and  accordingly send to screens
         btnLogin.setOnClickListener {
             findNavController().navigate(
-                AuthFragmentDirections.actionAuthFragmentToCreateNewVacancyFragment()
+               AuthFragmentDirections.actionAuthFragmentToHrMainFragment()
             )
         }
     }
+
+
 
     override fun initClicks() {
         super.initClicks()
