@@ -78,16 +78,30 @@
 
 
     <Button
-        android:id="@+id/btnLogin"
+        android:id="@+id/btnLoginUser"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginHorizontal="14dp"
-        android:text="Войти"
+        android:text="Войти как искатель"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnLoginAssHr"
+        android:layout_marginBottom="40dp"
+        />
+
+
+    <Button
+        android:id="@+id/btnLoginAssHr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginHorizontal="14dp"
+        android:text="Войти как HR"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginBottom="40dp"
         />
+
 
 
 

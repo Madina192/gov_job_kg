@@ -16,9 +16,15 @@ class AuthFragment : BaseFragment<AuthViewModel, FragmentAuthBinding>(FragmentAu
     override fun initialize() = with(binding) {
         super.initialize()
         //TODO check user role and  accordingly send to screens
-        btnLogin.setOnClickListener {
+        btnLoginUser.setOnClickListener {
             findNavController().navigate(
-               AuthFragmentDirections.actionAuthFragmentToHrMainFragment()
+                AuthFragmentDirections.actionAuthFragmentToUserMainFragment()
+            )
+        }
+
+        btnLoginAssHr.setOnClickListener {
+            findNavController().navigate(
+                AuthFragmentDirections.actionAuthFragmentToHrMainFragment()
             )
         }
     }
@@ -35,6 +41,7 @@ class AuthFragment : BaseFragment<AuthViewModel, FragmentAuthBinding>(FragmentAu
 
         }*/
     }
+
 
     override fun onLoading(loading: Boolean) {
         super.onLoading(loading)

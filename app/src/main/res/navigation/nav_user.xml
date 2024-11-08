@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_user"
+    app:startDestination="@id/userHomeFragment">
+=
+    <fragment
+        android:id="@+id/userHomeFragment"
+        android:name="com.example.govjobkg.ui.user.UserHomeFragment"
+        android:label="UserHomeFragment" />
+    <fragment
+        android:id="@+id/userSavedFragment"
+        android:name="com.example.govjobkg.ui.user.UserSavedFragment"
+        android:label="UserSavedFragment" />
+    <fragment
+        android:id="@+id/userProfileFragment"
+        android:name="com.example.govjobkg.ui.user.UserProfileFragment"
+        android:label="UserProfileFragment" />
+    <fragment
+        android:id="@+id/userApplicationsFragment"
+        android:name="com.example.govjobkg.ui.user.UserApplicationsFragment"
+        android:label="UserApplicationsFragment" />
+</navigation>

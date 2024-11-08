@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/userHomeFragment"
+        android:icon="@drawable/ic_home"
+        android:title="Главная"
+        />
+    <item
+        android:id="@+id/userApplicationsFragment"
+        android:icon="@drawable/ic_my_applications"
+        android:title="Мои отклики"
+        />
+    <item
+        android:id="@+id/userSavedFragment"
+        android:icon="@drawable/baseline_favorite_24"
+        android:title="Избранные"
+        />
+
+    <item
+        android:id="@+id/userProfileFragment"
+        android:icon="@drawable/ic_profile"
+        android:title="Профиль"
+        />
+
+</menu>

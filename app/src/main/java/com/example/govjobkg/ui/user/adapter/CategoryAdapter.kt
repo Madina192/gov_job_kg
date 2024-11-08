@@ -1,4 +1,4 @@
-package com.example.govjobkg.ui.user.main
+package com.example.govjobkg.ui.user.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.example.govjobkg.databinding.ItemCategoryBinding
 import com.example.govjobkg.network.models.Category
 
-class UserMainAdapter : Adapter<UserMainAdapter.UserMainViewHolder>(){
+class CategoryAdapter : Adapter<CategoryAdapter.UserMainViewHolder>(){
 
     private var list = listOf<Category>()
 

@@ -1,4 +1,4 @@
-package com.example.govjobkg.ui.user.main
+package com.example.govjobkg.ui.user
 
 import com.example.govjobkg.base.BaseViewModel
 
