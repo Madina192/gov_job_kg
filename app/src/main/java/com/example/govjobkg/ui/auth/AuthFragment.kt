@@ -11,7 +11,7 @@ class AuthFragment : BaseFragment<AuthViewModel, FragmentAuthBinding>(FragmentAu
 
     override fun initialize() {
         super.initialize()
-        viewModel.getMovies()
+
     }
 
     override fun initClicks() {
@@ -20,9 +20,9 @@ class AuthFragment : BaseFragment<AuthViewModel, FragmentAuthBinding>(FragmentAu
 
     override fun observeViewModel() {
         super.observeViewModel()
-        viewModel.movies.observe(viewLifecycleOwner) {
+      /*  viewModel.movies.observe(viewLifecycleOwner) {
 
-        }
+        }*/
     }
 
     override fun onLoading(loading: Boolean) {

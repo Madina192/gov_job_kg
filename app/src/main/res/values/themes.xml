@@ -3,7 +3,12 @@
     <style name="Base.Theme.GovJobKG" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimaryDark">@color/mainColor</item>
     </style>
 
-    <style name="Theme.GovJobKG" parent="Base.Theme.GovJobKG" />
+    <style name="Theme.GovJobKG" parent="Base.Theme.GovJobKG">
+
+        <item name="colorSecondary">@color/mainColor</item>
+        <item name="materialButtonStyle">@style/Theme.GovJobKG.ButtonStyle</item>
+    </style>
 </resources>
