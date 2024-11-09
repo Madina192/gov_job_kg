@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.govjobkg.databinding.ItemVacancyInListBinding
 import com.example.govjobkg.network.models.Vacancy
 
-class VacanciesAdapter : RecyclerView.Adapter<VacanciesAdapter.VacanciesViewHolder>() {
+class VacanciesAdapter(private val onClick: () -> Unit) : RecyclerView.Adapter<VacanciesAdapter.VacanciesViewHolder>() {
 
     private var list = listOf<Vacancy>()
 
@@ -38,6 +38,10 @@ class VacanciesAdapter : RecyclerView.Adapter<VacanciesAdapter.VacanciesViewHold
             binding.tvCompany.text = vacancy.company
             binding.tvSalary.text = vacancy.salary
             binding.tvExperience.text = vacancy.experience
+
+            itemView.setOnClickListener {
+                onClick()
+            }
         }
     }
 

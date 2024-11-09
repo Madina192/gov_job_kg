@@ -29,5 +29,25 @@
         android:id="@+id/vacanciesFragment"
         android:name="com.example.govjobkg.ui.user.vacancies.VacanciesFragment"
         android:label="fragment_vacancies"
-        tools:layout="@layout/fragment_vacancies" />
+        tools:layout="@layout/fragment_vacancies" >
+        <action
+            android:id="@+id/action_vacancies_to_vacancyDescFragment"
+            app:destination="@id/vacancyDescFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/vacancyDescFragment"
+        android:name="com.example.govjobkg.ui.user.vacancyDescription.VacancyDescFragment"
+        android:label="fragment_vacancy_desc"
+        tools:layout="@layout/fragment_vacancy_desc" >
+
+        <action
+            android:id="@+id/action_vacancyDescFragment_to_resumeFragment"
+            app:destination="@id/resumeFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/resumeFragment"
+        android:name="com.example.govjobkg.ui.user.resume.ResumeFragment"
+        android:label="fragment_resume"
+        tools:layout="@layout/fragment_resume" />
 </navigation>
