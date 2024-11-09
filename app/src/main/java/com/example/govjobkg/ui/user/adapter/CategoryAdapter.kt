@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.example.govjobkg.databinding.ItemCategoryBinding
 import com.example.govjobkg.network.models.Category
 
-class CategoryAdapter : Adapter<CategoryAdapter.UserMainViewHolder>(){
+class CategoryAdapter(private val onClick: () -> Unit) : Adapter<CategoryAdapter.UserMainViewHolder>(){
 
     private var list = listOf<Category>()
 
@@ -30,7 +30,12 @@ class CategoryAdapter : Adapter<CategoryAdapter.UserMainViewHolder>(){
         fun onBind(category: Category){
             binding.ivIcon.setImageResource(category.image)
             binding.tvTitle.text = category.title
+
+            itemView.setOnClickListener {
+                onClick()
+            }
         }
+
     }
 
 }
