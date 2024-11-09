@@ -2,10 +2,11 @@ package com.example.govjobkg.ui.user.resume
 
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.findNavController
 import com.example.govjobkg.base.BaseFragment
-import com.example.govjobkg.databinding.FragmentResumeBinding
 import com.example.govjobkg.network.models.Resume
 import kotlinx.coroutines.launch
+import com.example.govjobkg.databinding.FragmentResumeBinding
 
 class ResumeFragment : BaseFragment<ResumeViewModel, FragmentResumeBinding>(FragmentResumeBinding::inflate) {
 
@@ -25,7 +26,9 @@ class ResumeFragment : BaseFragment<ResumeViewModel, FragmentResumeBinding>(Frag
         super.observeViewModel()
 
         viewModel.createResumeResponse.observe(viewLifecycleOwner) {
-            //
+            findNavController().navigate(
+                ResumeFragmentDirections.actionResumeFragmentToSuccessFragment2()
+            )
         }
     }
 

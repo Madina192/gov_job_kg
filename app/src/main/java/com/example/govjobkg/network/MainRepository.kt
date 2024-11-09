@@ -14,6 +14,12 @@ class MainRepository {
         return apiRequest { movieService.getMovies() }
     }
 
+    suspend fun postVacancy(
+        vacancy: Vacancy
+    ): ApiResponse<Unit> {
+        return apiRequest { movieService.postVacancy(vacancy) }
+    }
+
     suspend fun createResume(request : Resume): ApiResponse<ResumeResponse> {
         return apiRequest { movieService.createResume(request) }
     }

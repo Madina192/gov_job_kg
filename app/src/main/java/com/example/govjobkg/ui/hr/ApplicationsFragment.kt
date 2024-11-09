@@ -9,7 +9,6 @@ class ApplicationsFragment : BaseFragment<MainHrViewModel, FragmentApplicationsB
 
     override val viewModel: MainHrViewModel by viewModels()
 
-
     override fun initialize() {
         super.initialize()
         initToolbar()

@@ -34,6 +34,7 @@
             android:id="@+id/action_vacancies_to_vacancyDescFragment"
             app:destination="@id/vacancyDescFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/vacancyDescFragment"
         android:name="com.example.govjobkg.ui.user.vacancyDescription.VacancyDescFragment"
@@ -45,6 +46,7 @@
             app:destination="@id/resumeFragment" />
 
     </fragment>
+
     <fragment
         android:id="@+id/resumeFragment"
         android:name="com.example.govjobkg.ui.user.resume.ResumeFragment"
@@ -54,8 +56,16 @@
             android:id="@+id/action_resumeFragment_to_successFragment2"
             app:destination="@id/successFragment2" />
     </fragment>
+
     <fragment
         android:id="@+id/successFragment2"
-        android:name="com.example.govjobkg.ui.hr.SuccessFragment"
-        android:label="SuccessFragment" />
+        android:name="com.example.govjobkg.ui.user.UserSuccessFragment"
+        android:label="SuccessFragment"
+        tools:layout="@layout/fragment_user_success" >
+
+        <action
+            android:id="@+id/action_successFragment2_to_userApplicationsFragment"
+            app:destination="@id/userApplicationsFragment" />
+    </fragment>
+
 </navigation>

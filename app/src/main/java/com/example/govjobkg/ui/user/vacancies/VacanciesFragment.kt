@@ -5,7 +5,6 @@ import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import com.example.govjobkg.base.BaseFragment
 import com.example.govjobkg.databinding.FragmentVacanciesBinding
-import com.example.govjobkg.ui.user.UserHomeFragmentDirections
 import kotlinx.coroutines.launch
 
 class VacanciesFragment : BaseFragment<VacanciesViewModel, FragmentVacanciesBinding>(FragmentVacanciesBinding::inflate) {

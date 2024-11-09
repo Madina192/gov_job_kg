@@ -5,6 +5,8 @@ import com.example.govjobkg.network.models.Resume
 import com.example.govjobkg.network.models.ResumeResponse
 import com.example.govjobkg.network.models.Vacancy
 import retrofit2.http.Body
+import retrofit2.http.Field
+import retrofit2.http.FormUrlEncoded
 import retrofit2.http.GET
 import retrofit2.http.POST
 import retrofit2.http.Query
@@ -16,11 +18,20 @@ interface MainService {
         @Query("page") page: Int = 1,
     ): MovieResponse
 
-    @POST("/create-resume/")
+    @POST("http://192.168.5.47:8000/create-resume/")
     suspend fun createResume(
         @Body request : Resume
     ): ResumeResponse
 
-    @GET("/jobs/")
+    @GET("http://192.168.5.47:8000/jobs/")
     suspend fun getJobs(): List<Vacancy>
+
+
+
+    @POST("http://192.168.5.47:8000/jobs/")
+    suspend fun postVacancy(
+        @Body innRequestBody: Vacancy
+    )
+
+
 }
