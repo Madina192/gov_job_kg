@@ -8,7 +8,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 import kotlin.math.log
 
 object RetrofitClient {
-    private const val BASE_URL = "https://api.themoviedb.org/3/"
+    private const val BASE_URL = "http://127.0.0.1:8000/"
     const val BASE_URL_IMAGE = "https://image.tmdb.org/t/p/w185"
     private const val API_KEY = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJjMDhjODA0YzhmNDkxYTExMTE5MTUzMDU4ZGZkODE2OCIsIm5iZiI6MTcyOTUxMjE2NS4yNDgwNjQsInN1YiI6IjY0OTdmODI0YjM0NDA5MDBmZmVjNzZhMSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.5-Zfi-04i2RsI5KekBmXj6jc8FifYoa6aC8h0yt6jDw"
 

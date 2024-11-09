@@ -49,5 +49,13 @@
         android:id="@+id/resumeFragment"
         android:name="com.example.govjobkg.ui.user.resume.ResumeFragment"
         android:label="fragment_resume"
-        tools:layout="@layout/fragment_resume" />
+        tools:layout="@layout/fragment_resume" >
+        <action
+            android:id="@+id/action_resumeFragment_to_successFragment2"
+            app:destination="@id/successFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/successFragment2"
+        android:name="com.example.govjobkg.ui.hr.SuccessFragment"
+        android:label="SuccessFragment" />
 </navigation>
