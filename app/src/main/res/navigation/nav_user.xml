@@ -8,7 +8,11 @@
     <fragment
         android:id="@+id/userHomeFragment"
         android:name="com.example.govjobkg.ui.user.UserHomeFragment"
-        android:label="UserHomeFragment" />
+        android:label="UserHomeFragment">
+        <action
+            android:id="@+id/action_homeFragment_to_vacanciesFragment"
+            app:destination="@id/vacanciesFragment" />
+    </fragment>
     <fragment
         android:id="@+id/userSavedFragment"
         android:name="com.example.govjobkg.ui.user.UserSavedFragment"
@@ -21,4 +25,9 @@
         android:id="@+id/userApplicationsFragment"
         android:name="com.example.govjobkg.ui.user.UserApplicationsFragment"
         android:label="UserApplicationsFragment" />
+    <fragment
+        android:id="@+id/vacanciesFragment"
+        android:name="com.example.govjobkg.ui.user.vacancies.VacanciesFragment"
+        android:label="fragment_vacancies"
+        tools:layout="@layout/fragment_vacancies" />
 </navigation>
