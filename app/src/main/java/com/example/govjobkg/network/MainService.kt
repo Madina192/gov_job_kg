@@ -18,7 +18,7 @@ interface MainService {
 
 
 
-    @POST("http://127.0.0.1:8000/jobs/")
+    @POST("http://192.168.5.47:8000/jobs/")
     suspend fun postVacancy(
         @Body innRequestBody: Vacancy
     )
