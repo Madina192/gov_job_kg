@@ -27,5 +27,13 @@
     <fragment
         android:id="@+id/createNewVacancyFragment"
         android:name="com.example.govjobkg.ui.hr.CreateNewVacancyFragment"
-        android:label="CreateNewVacancyFragment" />
+        android:label="CreateNewVacancyFragment" >
+        <action
+            android:id="@+id/action_createNewVacancyFragment_to_successFragment"
+            app:destination="@id/successFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/successFragment"
+        android:name="com.example.govjobkg.ui.hr.SuccessFragment"
+        android:label="SuccessFragment" />
 </navigation>
