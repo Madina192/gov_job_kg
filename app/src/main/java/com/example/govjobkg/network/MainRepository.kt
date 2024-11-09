@@ -1,6 +1,7 @@
 package com.example.govjobkg.network
 
 import com.example.govjobkg.network.models.MovieResponse
+import com.example.govjobkg.network.models.Vacancy
 import com.example.govjobkg.util.apiRequest
 
 class MainRepository {
@@ -9,6 +10,12 @@ class MainRepository {
     suspend fun getMovies(
     ): ApiResponse<MovieResponse> {
         return apiRequest { movieService.getMovies() }
+    }
+
+    suspend fun postVacancy(
+        vacancy: Vacancy
+    ): ApiResponse<Unit> {
+        return apiRequest { movieService.postVacancy(vacancy) }
     }
 
 }
