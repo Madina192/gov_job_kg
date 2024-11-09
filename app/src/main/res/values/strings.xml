@@ -2,4 +2,46 @@
     <string name="app_name">GovJobKG</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="Sectors">
+        <item>Минздрав</item>
+        <item>Минобразования</item>
+        <item>Госкомитет по информационным технологиям</item>
+        <item>Национальная библиотека </item>
+        <item>Крупные университеты и институты</item>
+        <item>Кыргызский Национальный Университет</item>
+        <item>Мэрия Бишкека</item>
+        <item>Мэрия Оша</item>
+        <item>Государственные больницы и поликлиникит</item>
+        <item>Национальная академия наук</item>
+        <item>Министерство юстиции</item>
+    </string-array>
+
+    <string-array name="JobOptions">
+        <item>Врач</item>
+        <item>Учитель</item>
+        <item>Программист</item>
+        <item>Библиотекарь</item>
+        <item>Научный сотрудник</item>
+        <item>Юрист</item>
+        <item>Администратор</item>
+        <item>Маркетолог</item>
+        <item>Менеджер по персоналу</item>
+        <item>Финансовый аналитик</item>
+        <item>Инженер</item>
+        <item>Охранник</item>
+        <item>Социальный работник</item>
+        <item>Проектный менеджер</item>
+        <item>Медсестра</item>
+        <item>Экономист</item>
+        <item>Секретарь</item>
+        <item>Куратор проектов</item>
+        <item>Аналитик данных</item>
+        <item>Копирайтер</item>
+    </string-array>
+
+    <string-array name="Currencies">
+        <item>USD</item>
+        <item>СОМ</item>
+    </string-array>
 </resources>
